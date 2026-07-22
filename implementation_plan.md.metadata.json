@@ -1,6 +1,0 @@
-{
-  "summary": "Plan de implementación completo para el sistema HRMS. Incluye decisiones de arquitectura (Node.js + Express + SQLite backend, HTML/CSS/JS vanilla frontend con Chart.js), estructura de archivos, detalle de cada módulo funcional, diseño visual, fases de ejecución y usuarios demo para seed.",
-  "updatedAt": "2026-07-20T19:12:08.301922400Z",
-  "requestFeedback": true,
-  "userFacing": true
-}

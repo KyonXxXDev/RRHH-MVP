@@ -6,7 +6,7 @@ Aplicación web de gestión de recursos humanos con backend Express y frontend e
 
 1. Subir este repositorio a GitHub.
 2. Crear un nuevo Web Service en Render.
-3. Conectar el repositorio y elegir la carpeta `backend` como raíz del servicio o usar el archivo `render.yaml` incluido.
+3. Conectar el repositorio y elegir la carpeta `backend` como raíz del servicio o usar el archivo `gcloud.yaml` incluido.
 4. Render ejecutará automáticamente:
    - `npm install`
    - `npm start`

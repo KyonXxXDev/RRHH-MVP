@@ -8,7 +8,7 @@ const { initializeDatabase } = require('./database');
 initializeDatabase();
 
 const app = express();
-const PORT = Number(process.env.PORT || 3001);
+const PORT = Number(process.env.PORT || 8080);
 
 // Middleware
 app.use(cors({
@@ -78,13 +78,13 @@ app.use((err, req, res, next) => {
 function startServer(port = PORT) {
   const tryListen = (candidatePort) => new Promise((resolve, reject) => {
     const server = app.listen(candidatePort, () => resolve(server));
-    server.on('error', (error) => {
-      if (error.code === 'EADDRINUSE') {
-        reject(Object.assign(error, { candidatePort }));
-      } else {
-        reject(error);
-      }
-    });
+    //server.on('error', (error) => {
+      // if (error.code === 'EADDRINUSE') {
+      //  reject(Object.assign(error, { candidatePort }));
+      //} else {
+      //  reject(error);
+      //}
+    //});
   });
 
   return tryListen(port)
